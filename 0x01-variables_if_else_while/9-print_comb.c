@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - program entry
+ * main - program entry point.
  * Return: Always 0
  */
 int main(void)
@@ -18,7 +18,7 @@ int main(void)
 		else
 		{
 			putchar(',');
-			putchar('');
+			putchar(' ');
 		}
 	}
 	putchar('\n');
