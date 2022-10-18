@@ -2,9 +2,9 @@
 
 /**
  * print_alphabet_x10 - prints all alphabets in lowercase 10 times.
- * Return: On success 1.
+ * Return: Always 0
  */
-void print_alphabet_x10(void)
+void print_alphabet_x10(void);
 {
 	int ten;
 	char la;
