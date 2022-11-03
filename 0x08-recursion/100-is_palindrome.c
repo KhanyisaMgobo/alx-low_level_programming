@@ -16,7 +16,7 @@ int _strlen_recursion(char *s)
  * comparator - compares each character of the string
  * @s: string
  * @n1: smallest terator
- * @n2: largest iterator
+ * @n2: biggest iterator
  * Return: .
  */
 int comparator(char *s, int n1, int n2)
@@ -40,4 +40,3 @@ int is_palindrome(char *s)
 		return (1);
 	return (comparator(s, 0, _strlen_recursion(s) - 1));
 }
-
