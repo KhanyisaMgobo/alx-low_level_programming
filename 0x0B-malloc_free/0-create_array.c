@@ -1,24 +1,39 @@
 #include "main.h"
-#include <stdlib.h>
 
 /**
- * create_array - creates an array of chars.
- * @size: size of the array.
- * @c: Toraged char.
- * Return: pointer of an array of chars.
+ * create_array - array for prints a string.
+ * @size: size of the array
+ * @c: char
+ * Return: pointer
  */
 char *create_array(unsigned int size, char c)
 {
-	char *cr;
-	unsigned int i;
+char *buffer;
+unsigned int position;
 
-	if (size == 0)
-		return (NULL);
-	cr = malloc(sozeof(c) * size);
-	if (cr == NULL)
-		return (NULL);
-	for (i = 0; i < size; i++)
-		cr[i] = c;
-	return (cr);
+if (size == 0)
+{
+return (NULL);
 }
 
+/*Define values with malloc*/
+buffer = (char *) malloc(size * sizeof(c));
+
+if (buffer == 0)
+{
+return (NULL);
+}
+
+else
+{
+position = 0;
+while (position < size) /*While for array*/
+{
+*(buffer + position) = c;
+position++;
+}
+
+return (buffer);
+}
+
+}
